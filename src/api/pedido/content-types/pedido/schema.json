@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedidos",
+  "info": {
+    "singularName": "pedido",
+    "pluralName": "pedidos",
+    "displayName": "pedido",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombrePedido": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "cliente": {
+      "type": "string"
+    },
+    "hora": {
+      "type": "time"
+    },
+    "estacionInicio": {
+      "type": "string"
+    },
+    "estacionFin": {
+      "type": "string"
+    },
+    "cuantoTardoInicioFin": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "pedidos"
+    },
+    "estado": {
+      "type": "boolean",
+      "default": true
+    },
+    "fehcaInicio": {
+      "type": "string"
+    },
+    "fechaFin": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "string"
+    }
+  }
+}

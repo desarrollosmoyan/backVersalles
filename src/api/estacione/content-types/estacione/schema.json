@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "estaciones",
+  "info": {
+    "singularName": "estacione",
+    "pluralName": "estaciones",
+    "displayName": "estacione"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "codigoNFC": {
+      "type": "string"
+    }
+  }
+}

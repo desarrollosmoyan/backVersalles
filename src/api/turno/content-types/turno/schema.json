@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "turnos",
+  "info": {
+    "singularName": "turno",
+    "pluralName": "turnos",
+    "displayName": "turno"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "inicio": {
+      "type": "datetime"
+    },
+    "fin": {
+      "type": "datetime"
+    }
+  }
+}
