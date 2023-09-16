@@ -51,6 +51,26 @@
     },
     "fecha": {
       "type": "string"
+    },
+    "cargo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cargo.cargo"
+    },
+    "observacione": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::observacione.observacione",
+      "mappedBy": "pedido"
+    },
+    "tipoIdentificacion": {
+      "type": "string"
+    },
+    "identificacion": {
+      "type": "string"
+    },
+    "finalizado": {
+      "type": "boolean"
     }
   }
 }

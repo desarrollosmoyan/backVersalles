@@ -65,9 +65,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "cargo": {
-      "type": "string"
-    },
     "nombreCompleto": {
       "type": "string"
     },
@@ -84,6 +81,30 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::turno.turno"
+    },
+    "cargo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cargo.cargo",
+      "inversedBy": "user"
+    },
+    "enlinea": {
+      "type": "boolean"
+    },
+    "observacione": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::observacione.observacione",
+      "mappedBy": "users_permissions_user"
+    },
+    "ubicacione": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ubicacione.ubicacione",
+      "mappedBy": "users_permissions_user"
+    },
+    "ubicacionActual": {
+      "type": "string"
     }
   }
 }

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cargos",
+  "info": {
+    "singularName": "cargo",
+    "pluralName": "cargos",
+    "displayName": "cargo"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "boolean"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "cargo"
+    }
+  }
+}

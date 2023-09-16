@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "observaciones",
+  "info": {
+    "singularName": "observacione",
+    "pluralName": "observaciones",
+    "displayName": "observacione"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "observacion": {
+      "type": "text"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "observacione"
+    },
+    "pedido": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pedido.pedido",
+      "inversedBy": "observacione"
+    }
+  }
+}
